@@ -144,3 +144,11 @@ A continuación, se presentan ejemplos de cómo consumir los endpoints de la API
   "capacidad": 200
 }
 ```
+
+**4. Obtener un evento por su ID**
+
+*   **Método:** `GET`
+*   **URL:** `http://localhost:3000/api/eventos/1` (Reemplaza 1 con el ID del evento que deseas obtener)
+*   **Headers:** 
+    *   `Authorization: Bearer <token_jwt>`
+
