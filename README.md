@@ -78,4 +78,19 @@ La documentación interactiva de la API, generada con Swagger, está disponible 
 
 ## Video Explicativo
 
-*   [Enlace al video](https://studio.youtube.com/video/xh_VMUVXiAk/edit): En este video, explico la solución que he implementado para el reto técnico, incluyendo la estructura del proyecto, las tecnologías utilizadas, las funcionalidades de la API y una demostración en funcionamiento.
+*   [Enlace al video](https://www.youtube.com/watch?v=xh_VMUVXiAk): En este video, explico la solución que he implementado para el reto técnico, incluyendo la estructura del proyecto, las tecnologías utilizadas, las funcionalidades de la API y una demostración en funcionamiento.
+
+## Ejemplos de Consumo de la API
+
+A continuación, se presentan ejemplos de cómo consumir los endpoints de la API utilizando `curl`, incluyendo la autenticación con JWT. Asegúrate de reemplazar `<tu_token_jwt>` con un token válido obtenido al registrar un usuario.
+
+**1. Registrar un nuevo usuario**
+
+```bash
+curl -X POST http://localhost:3000/api/auth/registro \
+-H 'Content-Type: application/json' \
+-d '{
+    "nombre": "Juan Pérez",
+    "correoElectronico": "juan.perez@example.com",
+    "password": "contraseña_segura"
+}'
