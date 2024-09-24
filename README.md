@@ -67,7 +67,7 @@ Esta es una API RESTful desarrollada en Node.js con Express y TypeScript para ge
     o
 
     ```bash
-    npm run start # Modo de producción (después de compilar)
+    npm run start # Modo de producción
     ```
 
 ## Documentación de la API
