@@ -148,7 +148,7 @@ A continuación, se presentan ejemplos de cómo consumir los endpoints de la API
 **4. Obtener un evento por su ID**
 
 *   **Método:** `GET`
-*   **URL:** `http://localhost:3000/api/eventos/1` (Reemplaza 1 con el ID del evento que deseas obtener)
+*   **URL:** `http://localhost:3000/api/eventos/1` (Reemplazar 1 con el ID del evento que desea obtener)
 *   **Headers:** 
     *   `Authorization: Bearer <token_jwt>`
 
