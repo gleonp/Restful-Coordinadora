@@ -89,12 +89,11 @@ A continuación, se presentan ejemplos de cómo consumir los endpoints de la API
 
 *   **Método:** `POST`
 *   **URL:** `http://localhost:3000/api/auth/registro`
-*   **Headers:** `Content-Type: application/json`
 *   **Body (JSON):**
 
 ```json
 {
-    "nombre": "Juan Pérez",
-    "correoElectronico": "juan.perez@example.com",
-    "password": "contraseña_segura"
+    "nombre": "Pedro",
+    "correoElectronico": "pedro@gmail.com",
+    "password": "contraseña"
 }
