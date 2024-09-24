@@ -78,4 +78,4 @@ La documentación interactiva de la API, generada con Swagger, está disponible 
 
 ## Video Explicativo
 
-*   [Enlace al video privado](https://www.youtube.com/watch?v=hyWJ4n0cM1E): En este video, explico la solución que he implementado para el reto técnico, incluyendo la estructura del proyecto, las tecnologías utilizadas, las funcionalidades de la API y una demostración en funcionamiento.
+*   [Enlace al video privado](https://studio.youtube.com/video/xh_VMUVXiAk/edit): En este video, explico la solución que he implementado para el reto técnico, incluyendo la estructura del proyecto, las tecnologías utilizadas, las funcionalidades de la API y una demostración en funcionamiento.
