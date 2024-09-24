@@ -1,0 +1,31 @@
+version: '3'
+services:
+  api:
+    build: . # Construir la imagen a partir del Dockerfile en el directorio actual
+    ports:
+      - "3000:3000" # Puerto 3000 del contenedor al puerto 3000 del host
+    environment: # Pasar las variables de entorno necesarias desde .env
+      - DB_HOST=${DB_HOST}
+      - DB_PORT=${DB_PORT}
+      - DB_USER=${DB_USER}
+      - DB_PASSWORD=${DB_PASSWORD}
+      - DB_NAME=${DB_NAME}
+      - SECRET_KEY=${SECRET_KEY}
+      - MAPBOX_ACCESS_TOKEN=${MAPBOX_ACCESS_TOKEN}
+    depends_on: # La base de datos debe estar en ejecución antes de iniciar la API
+      - db
+    deploy:
+      replicas: 5 # Configurar 5 réplicas del servicio de la API
+
+  db: # Definir el servicio de la base de datos (MySQL)
+    image: mysql:latest
+    restart: always
+    environment:
+      - MYSQL_ROOT_PASSWORD=tu_root_password # Reemplaza con tu contraseña de root de MySQL
+      - MYSQL_DATABASE=${DB_NAME}
+      - MYSQL_USER=${DB_USER}
+      - MYSQL_PASSWORD=${DB_PASSWORD}
+    ports:
+      - "3306:3306"
+    volumes: # Persistir los datos de la base de datos
+      - ./mysql_data:/var/lib/mysql
