@@ -16,7 +16,7 @@ export const obtenerLugaresCercanos = async (latitud: number, longitud: number, 
         const response = await geocodingClient
             .reverseGeocode({
                 query: [longitud, latitud],
-                limit: 20, // Limite de resultados
+                limit: 30, // Limite de resultados
                 types: ['poi'], // Buscar solo puntos de interés
             })
         .send();        
