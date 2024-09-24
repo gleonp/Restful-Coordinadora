@@ -122,3 +122,25 @@ A continuación, se presentan ejemplos de cómo consumir los endpoints de la API
   "capacidad": 200
 }
 ```
+
+**3. Editar evento**
+
+*   **Método:** `PUT`
+*   **URL:** `http://localhost:3000/api/eventos`
+*   **Headers:** 
+    *   `Authorization: Bearer <token_jwt>`
+*   **Body (JSON):**
+
+```json
+{
+  "nombre": "Nombre del evento",
+  "descripcion": "Nueva descripción del evento",
+  "fechaInicio": "2024-10-15T10:00:00.00",
+  "fechaFin": "2024-11-15T18:00:00.00",
+  "ubicacion": {
+    "latitud": 4.60971,
+    "longitud": -74.08175
+  },
+  "capacidad": 200
+}
+```
