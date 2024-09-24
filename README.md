@@ -83,14 +83,14 @@ La documentación interactiva de la API, generada con Swagger, está disponible 
 
 ## Ejemplos de Solicitudes en Postman
 
-A continuación, se presentan ejemplos de cómo consumir los endpoints de la API utilizando Postman, incluyendo la autenticación con JWT. Se debe utilizarel header **Authorization:** Bearer `<tu_token_jwt>`.  Se debe reemplazar `<tu_token_jwt>` con un token válido obtenido al registrar un usuario.
+A continuación, se presentan ejemplos de cómo consumir los endpoints de la API utilizando Postman, incluyendo la autenticación con JWT. Se debe utilizarel header **Authorization:** Bearer `<token_jwt>`.  Se debe reemplazar `<token_jwt>` con un token válido obtenido al registrar un usuario.
 
 **1. Registrar un nuevo usuario**
 
 *   **Método:** `POST`
 *   **URL:** `http://localhost:3000/api/auth/registro`
 *   **Headers:** 
-    *   `Content-Type: application/json`
+    *   `Authorization: Bearer <token_jwt>`
 *   **Body (JSON):**
 
 ```json
@@ -99,18 +99,26 @@ A continuación, se presentan ejemplos de cómo consumir los endpoints de la API
     "correoElectronico": "pedro@gmail.com",
     "password": "contraseña"
 }
+```
 
 **2. Crear un nuevo evento**
 
 *   **Método:** `POST`
 *   **URL:** `http://localhost:3000/api/eventos`
 *   **Headers:** 
-    *   `Authorization: Bearer <tu_token_jwt>`
+    *   `Authorization: Bearer <token_jwt>`
 *   **Body (JSON):**
 
 ```json
 {
-    "nombre": "Pedro",
-    "correoElectronico": "pedro@gmail.com",
-    "password": "contraseña"
+  "nombre": "Nombre del evento",
+  "descripcion": "Descripción del evento",
+  "fechaInicio": "2024-10-15T10:00:00.00",
+  "fechaFin": "2024-11-15T18:00:00.00",
+  "ubicacion": {
+    "latitud": 4.60971,
+    "longitud": -74.08175
+  },
+  "capacidad": 200
 }
+```
