@@ -89,6 +89,23 @@ A continuación, se presentan ejemplos de cómo consumir los endpoints de la API
 
 *   **Método:** `POST`
 *   **URL:** `http://localhost:3000/api/auth/registro`
+*   **Headers:** 
+    *   `Content-Type: application/json`
+*   **Body (JSON):**
+
+```json
+{
+    "nombre": "Pedro",
+    "correoElectronico": "pedro@gmail.com",
+    "password": "contraseña"
+}
+
+**2. Crear un nuevo evento**
+
+*   **Método:** `POST`
+*   **URL:** `http://localhost:3000/api/eventos`
+*   **Headers:** 
+    *   `Authorization: Bearer <tu_token_jwt>`
 *   **Body (JSON):**
 
 ```json
