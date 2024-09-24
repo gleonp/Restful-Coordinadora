@@ -34,7 +34,7 @@ Esta es una API RESTful desarrollada en Node.js con Express y TypeScript para ge
 1.  **Clonar el repositorio:**
 
     ```bash
-    git clone [se quitó una URL no válida]
+    git clone
     ```
 
 2.  **Instalar las dependencias:**
