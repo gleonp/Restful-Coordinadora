@@ -82,7 +82,7 @@ La documentación interactiva de la API, generada con Swagger, está disponible 
 
 ## Ejemplos de Consumo de la API
 
-A continuación, se presentan ejemplos de cómo consumir los endpoints de la API utilizando `curl`, incluyendo la autenticación con JWT. Asegúrate de reemplazar `<tu_token_jwt>` con un token válido obtenido al registrar un usuario.
+A continuación, se presentan ejemplos de cómo consumir los endpoints de la API utilizando `curl`, incluyendo la autenticación con JWT. Se debe reemplazar `<tu_token_jwt>` con un token válido obtenido al registrar un usuario.
 
 **1. Registrar un nuevo usuario**
 
